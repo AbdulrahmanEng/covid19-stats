@@ -13,6 +13,8 @@
 		B456AA90257A5A49003E3F9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B456AA8E257A5A49003E3F9D /* Main.storyboard */; };
 		B456AA92257A5A4D003E3F9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B456AA91257A5A4D003E3F9D /* Assets.xcassets */; };
 		B456AA95257A5A4D003E3F9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B456AA93257A5A4D003E3F9D /* LaunchScreen.storyboard */; };
+		B456AAA2257A6211003E3F9D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456AAA1257A6211003E3F9D /* Country.swift */; };
+		B456AAA5257A686E003E3F9D /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B456AAA4257A686E003E3F9D /* CountryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B456AA91257A5A4D003E3F9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B456AA94257A5A4D003E3F9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B456AA96257A5A4D003E3F9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B456AAA1257A6211003E3F9D /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		B456AAA4257A686E003E3F9D /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				B456AA91257A5A4D003E3F9D /* Assets.xcassets */,
 				B456AA93257A5A4D003E3F9D /* LaunchScreen.storyboard */,
 				B456AA96257A5A4D003E3F9D /* Info.plist */,
+				B456AAA1257A6211003E3F9D /* Country.swift */,
+				B456AAA4257A686E003E3F9D /* CountryViewController.swift */,
 			);
 			path = Covid19Stats;
 			sourceTree = "<group>";
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B456AAA2257A6211003E3F9D /* Country.swift in Sources */,
 				B456AA8D257A5A49003E3F9D /* ViewController.swift in Sources */,
 				B456AA89257A5A49003E3F9D /* AppDelegate.swift in Sources */,
+				B456AAA5257A686E003E3F9D /* CountryViewController.swift in Sources */,
 				B456AA8B257A5A49003E3F9D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
