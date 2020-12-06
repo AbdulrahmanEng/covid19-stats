@@ -7,7 +7,24 @@
 
 import Foundation
 
-struct Country {
+struct CountryList: Codable {
+    let data: [Country]
+}
+
+struct Country: Codable {
     let name: String
+    let today: CountryToday
+    let coordinates: CountryCoordinates
+}
+
+// Today's stats
+struct CountryToday: Codable {
     let deaths: Int
+    let confirmed: Int
+}
+
+// Coordinates
+struct CountryCoordinates: Codable {
+    let longitude: Double?
+    let latitude: Double?
 }

@@ -8,11 +8,34 @@
 import UIKit
 
 class ViewController: UITableViewController {
-    let countries = [
-        Country(name: "Norway", deaths: 40),
-        Country(name: "Italy", deaths: 250),
-        Country(name: "Japan", deaths: 100)
-    ]
+    var countries: [Country] = []
+    
+    // Load data
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let url = URL(string: "https://corona-api.com/countries")
+        
+        guard let u = url else {
+            return
+        }
+        
+        URLSession.shared.dataTask(with: u) {
+            (data, response, error) in
+                guard let data = data else {
+                    return
+                }
+            do {
+                let countryList = try JSONDecoder().decode(CountryList.self, from: data)
+                self.countries = countryList.data
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            } catch let error {
+                print("\(error)")
+            }
+        }.resume()
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1

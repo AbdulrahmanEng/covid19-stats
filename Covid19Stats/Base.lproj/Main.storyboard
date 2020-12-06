@@ -69,13 +69,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmed: 20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7G-FE-aTE">
+                                <rect key="frame" x="20" y="512" width="374" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="26n-Dc-cQR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="c7G-FE-aTE" firstAttribute="top" secondItem="iKb-b7-WnN" secondAttribute="bottom" constant="8" id="6Or-45-Lbn"/>
                             <constraint firstItem="iKb-b7-WnN" firstAttribute="top" secondItem="cWn-hA-Hh1" secondAttribute="bottom" constant="20" id="ANp-qp-YdI"/>
                             <constraint firstItem="cWn-hA-Hh1" firstAttribute="top" secondItem="26n-Dc-cQR" secondAttribute="top" constant="347" id="Pod-6r-5at"/>
+                            <constraint firstItem="26n-Dc-cQR" firstAttribute="trailing" secondItem="c7G-FE-aTE" secondAttribute="trailing" constant="20" id="SE1-wG-W3q"/>
                             <constraint firstItem="26n-Dc-cQR" firstAttribute="trailing" secondItem="cWn-hA-Hh1" secondAttribute="trailing" constant="20" id="ZSJ-Gj-cde"/>
+                            <constraint firstItem="c7G-FE-aTE" firstAttribute="leading" secondItem="26n-Dc-cQR" secondAttribute="leading" constant="20" id="dRf-Xy-JG1"/>
                             <constraint firstItem="iKb-b7-WnN" firstAttribute="leading" secondItem="26n-Dc-cQR" secondAttribute="leading" constant="20" id="nKv-Da-N2C"/>
                             <constraint firstItem="26n-Dc-cQR" firstAttribute="trailing" secondItem="iKb-b7-WnN" secondAttribute="trailing" constant="20" id="pQZ-aG-COe"/>
                             <constraint firstItem="cWn-hA-Hh1" firstAttribute="leading" secondItem="26n-Dc-cQR" secondAttribute="leading" constant="20" id="vMX-uh-rPw"/>
@@ -83,13 +92,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="FFz-Bz-a4Y"/>
                     <connections>
+                        <outlet property="confirmedLabel" destination="c7G-FE-aTE" id="Hok-il-UFC"/>
                         <outlet property="deathLabel" destination="iKb-b7-WnN" id="bAg-rh-z8b"/>
                         <outlet property="nameLabel" destination="cWn-hA-Hh1" id="QWS-Rm-lIm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6JL-2H-F5r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1488.4057971014495" y="59.598214285714285"/>
+            <point key="canvasLocation" x="1652" y="54"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="U6c-Ff-3kc">
